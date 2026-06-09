@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI readiness operating model</title>
+  <desc id="desc">A safe abstract operating model for NSOC data management, dummy-data prototyping and AI use-case prioritisation.</desc>
+  <rect width="1600" height="900" fill="#111827"/>
+  <rect x="72" y="72" width="1456" height="756" rx="28" fill="#f8f4ec"/>
+  <text x="116" y="140" fill="#a64b2a" font-family="Arial, sans-serif" font-size="24" font-weight="700">NSOC DATA MANAGEMENT / AI-READINESS</text>
+  <text x="116" y="204" fill="#111827" font-family="Arial, sans-serif" font-size="58" font-weight="800">Van operationele signalen naar toetsbare use cases</text>
+  <text x="118" y="252" fill="#334155" font-family="Arial, sans-serif" font-size="25">Proces, data en eigenaarschap eerst scherp maken. Daarna pas AI of automation kiezen.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="116" y="326" width="300" height="290" rx="18" fill="#ffffff" stroke="#d8d1c5" stroke-width="2"/>
+    <text x="148" y="382" fill="#0f766e" font-size="23" font-weight="800">01 SIGNALEN</text>
+    <text x="148" y="438" fill="#111827" font-size="31" font-weight="800">NSOC procesbeeld</text>
+    <text x="148" y="494" fill="#334155" font-size="24">Incidenten, handovers,</text>
+    <text x="148" y="532" fill="#334155" font-size="24">wachtrijen, escalaties</text>
+    <text x="148" y="570" fill="#334155" font-size="24">en terugkerende frictie.</text>
+
+    <rect x="468" y="326" width="300" height="290" rx="18" fill="#ffffff" stroke="#d8d1c5" stroke-width="2"/>
+    <text x="500" y="382" fill="#0f766e" font-size="23" font-weight="800">02 DATA</text>
+    <text x="500" y="438" fill="#111827" font-size="31" font-weight="800">Datakwaliteit</text>
+    <text x="500" y="494" fill="#334155" font-size="24">Bronnen, definities,</text>
+    <text x="500" y="532" fill="#334155" font-size="24">eigenaarschap en</text>
+    <text x="500" y="570" fill="#334155" font-size="24">privacy-safe datasets.</text>
+
+    <rect x="820" y="326" width="300" height="290" rx="18" fill="#ffffff" stroke="#d8d1c5" stroke-width="2"/>
+    <text x="852" y="382" fill="#0f766e" font-size="23" font-weight="800">03 PROTOTYPE</text>
+    <text x="852" y="438" fill="#111827" font-size="31" font-weight="800">Dummy-data PoC</text>
+    <text x="852" y="494" fill="#334155" font-size="24">Use cases toetsen</text>
+    <text x="852" y="532" fill="#334155" font-size="24">zonder echte klant- of</text>
+    <text x="852" y="570" fill="#334155" font-size="24">incidentdata te tonen.</text>
+
+    <rect x="1172" y="326" width="300" height="290" rx="18" fill="#ffffff" stroke="#d8d1c5" stroke-width="2"/>
+    <text x="1204" y="382" fill="#0f766e" font-size="23" font-weight="800">04 KEUZE</text>
+    <text x="1204" y="438" fill="#111827" font-size="31" font-weight="800">AI of automation</text>
+    <text x="1204" y="494" fill="#334155" font-size="24">Prioriteren op impact,</text>
+    <text x="1204" y="532" fill="#334155" font-size="24">haalbaarheid, adoptie</text>
+    <text x="1204" y="570" fill="#334155" font-size="24">en beheerbaarheid.</text>
+  </g>
+
+  <g fill="none" stroke="#0f766e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M426 470h30"/>
+    <path d="M456 470l-18-18m18 18l-18 18"/>
+    <path d="M778 470h30"/>
+    <path d="M808 470l-18-18m18 18l-18 18"/>
+    <path d="M1130 470h30"/>
+    <path d="M1160 470l-18-18m18 18l-18 18"/>
+  </g>
+
+  <rect x="116" y="676" width="1356" height="92" rx="18" fill="#111827"/>
+  <text x="150" y="735" fill="#fff7ed" font-family="Arial, sans-serif" font-size="29" font-weight="800">Uitkomst: een realistische backlog van AI/automation kansen, gebaseerd op procesvolwassenheid en data-readiness.</text>
+</svg>

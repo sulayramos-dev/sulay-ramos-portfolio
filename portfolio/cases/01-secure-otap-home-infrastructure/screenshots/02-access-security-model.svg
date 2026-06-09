@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">OTAP access and security model</title>
+  <desc id="desc">Safe visual explaining segmented VPN access, firewall hardening and SSH restrictions.</desc>
+  <rect width="1280" height="820" fill="#0f131a"/>
+  <rect x="46" y="42" width="1192" height="736" rx="22" fill="#fffaf0"/>
+  <text x="82" y="106" fill="#151a22" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="800">Access &amp; Security Model</text>
+  <text x="82" y="146" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif" font-size="20">Role-based remote access concept. Keys, subnets, peer details and IPs are not public.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="95" y="225" width="280" height="145" rx="16" fill="#d7efe6" stroke="#0f766e" stroke-width="3"/>
+    <text x="130" y="275" fill="#134e4a" font-size="28" font-weight="800">Developer</text>
+    <text x="130" y="315" fill="#134e4a" font-size="18">VPN access to platform zones</text>
+    <text x="130" y="342" fill="#134e4a" font-size="18">Used for build and validation</text>
+
+    <rect x="95" y="445" width="280" height="145" rx="16" fill="#fff" stroke="#b7791f" stroke-width="3"/>
+    <text x="130" y="495" fill="#151a22" font-size="28" font-weight="800">Tester</text>
+    <text x="130" y="535" fill="#374151" font-size="18">Restricted ingress access</text>
+    <text x="130" y="562" fill="#374151" font-size="18">No broad LAN exposure</text>
+
+    <rect x="500" y="250" width="280" height="250" rx="16" fill="#151a22"/>
+    <text x="560" y="310" fill="#fff8ec" font-size="30" font-weight="800">WireGuard</text>
+    <text x="545" y="350" fill="#ffe1a6" font-size="18">Segmented VPN gateway</text>
+    <text x="545" y="392" fill="#fff8ec" font-size="18">- Role-based access</text>
+    <text x="545" y="426" fill="#fff8ec" font-size="18">- LAN/VPN only SSH</text>
+    <text x="545" y="460" fill="#fff8ec" font-size="18">- No WAN management</text>
+
+    <rect x="900" y="225" width="280" height="145" rx="16" fill="#fff" stroke="#9a4f2f" stroke-width="3"/>
+    <text x="940" y="275" fill="#151a22" font-size="28" font-weight="800">Firewall</text>
+    <text x="940" y="315" fill="#374151" font-size="18">Default deny perimeter</text>
+    <text x="940" y="342" fill="#374151" font-size="18">No UPnP / DMZ / WAN admin</text>
+
+    <rect x="900" y="445" width="280" height="145" rx="16" fill="#fff" stroke="#9a4f2f" stroke-width="3"/>
+    <text x="940" y="495" fill="#151a22" font-size="28" font-weight="800">SSH</text>
+    <text x="940" y="535" fill="#374151" font-size="18">Key-based authentication</text>
+    <text x="940" y="562" fill="#374151" font-size="18">Root/password login disabled</text>
+  </g>
+
+  <g stroke="#0f766e" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M375 298 H500"/>
+    <path d="M375 518 H440 Q470 518 470 480 V395 Q470 375 500 375"/>
+    <path d="M780 330 H900"/>
+    <path d="M780 430 H850 Q875 430 875 518 H900"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="95" y="650" width="1085" height="70" rx="12" fill="#151a22"/>
+    <text x="130" y="694" fill="#ffe1a6" font-size="22" font-weight="800">Public message:</text>
+    <text x="315" y="694" fill="#fff8ec" font-size="22">Secure remote development without exposing management interfaces.</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">OTAP observability platform placeholder</title>
+  <desc id="desc">Safe Grafana-style dashboard placeholder for the OTAP monitoring platform.</desc>
+  <rect width="1280" height="820" fill="#151a22"/>
+  <rect x="42" y="38" width="1196" height="744" rx="22" fill="#0f131a"/>
+  <text x="82" y="102" fill="#fff8ec" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="800">Observability Platform</text>
+  <text x="82" y="142" fill="#ffe1a6" font-family="Segoe UI, Arial, sans-serif" font-size="20">Prometheus / Grafana / Exporters. Values and host labels are illustrative placeholders.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="82" y="200" width="350" height="185" rx="14" fill="#1f2937" stroke="#374151"/>
+    <text x="110" y="246" fill="#fff8ec" font-size="24" font-weight="800">Compute Health</text>
+    <text x="110" y="286" fill="#9ca3af" font-size="18">CPU / memory / disk</text>
+    <rect x="110" y="318" width="250" height="18" rx="9" fill="#374151"/>
+    <rect x="110" y="318" width="172" height="18" rx="9" fill="#0f766e"/>
+    <text x="110" y="358" fill="#d1d5db" font-size="18">Stable baseline</text>
+
+    <rect x="478" y="200" width="350" height="185" rx="14" fill="#1f2937" stroke="#374151"/>
+    <text x="506" y="246" fill="#fff8ec" font-size="24" font-weight="800">Container Runtime</text>
+    <text x="506" y="286" fill="#9ca3af" font-size="18">Podman rootless services</text>
+    <circle cx="546" cy="340" r="28" fill="#0f766e"/>
+    <circle cx="626" cy="340" r="28" fill="#b7791f"/>
+    <circle cx="706" cy="340" r="28" fill="#0f766e"/>
+
+    <rect x="874" y="200" width="350" height="185" rx="14" fill="#1f2937" stroke="#374151"/>
+    <text x="902" y="246" fill="#fff8ec" font-size="24" font-weight="800">Ingress Layer</text>
+    <text x="902" y="286" fill="#9ca3af" font-size="18">Reverse proxy / TLS</text>
+    <polyline points="905,350 960,318 1015,335 1070,292 1135,320 1190,278" fill="none" stroke="#ffe1a6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="82" y="435" width="570" height="230" rx="14" fill="#1f2937" stroke="#374151"/>
+    <text x="110" y="482" fill="#fff8ec" font-size="24" font-weight="800">Platform Services</text>
+    <text x="110" y="525" fill="#d1d5db" font-size="19">Monitoring</text>
+    <text x="320" y="525" fill="#d1d5db" font-size="19">DNS</text>
+    <text x="470" y="525" fill="#d1d5db" font-size="19">Proxy</text>
+    <text x="110" y="575" fill="#9ca3af" font-size="18">Prometheus + Grafana</text>
+    <text x="320" y="575" fill="#9ca3af" font-size="18">AdGuard Home</text>
+    <text x="470" y="575" fill="#9ca3af" font-size="18">NGINX</text>
+    <rect x="110" y="610" width="470" height="18" rx="9" fill="#374151"/>
+    <rect x="110" y="610" width="405" height="18" rx="9" fill="#0f766e"/>
+
+    <rect x="700" y="435" width="524" height="230" rx="14" fill="#1f2937" stroke="#374151"/>
+    <text x="728" y="482" fill="#fff8ec" font-size="24" font-weight="800">Status Snapshot</text>
+    <text x="728" y="535" fill="#d1d5db" font-size="19">Firewall hardening</text>
+    <text x="1110" y="535" fill="#0f766e" font-size="20" font-weight="900">OK</text>
+    <text x="728" y="580" fill="#d1d5db" font-size="19">Monitoring stack</text>
+    <text x="1110" y="580" fill="#0f766e" font-size="20" font-weight="900">OK</text>
+    <text x="728" y="625" fill="#d1d5db" font-size="19">VPN access</text>
+    <text x="1110" y="625" fill="#0f766e" font-size="20" font-weight="900">OK</text>
+  </g>
+</svg>

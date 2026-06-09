@@ -1,0 +1,241 @@
+{
+  "name": "Sulay Ramos",
+  "headline": "Full-stack Developer, AI-native Builder & Process-minded Problem Solver",
+  "location": "Nederland",
+  "availability": "Beschikbaar voor rollen en opdrachten waar full-stack development, AI, procesdenken, projecten en praktische automation samenkomen.",
+  "contact": {
+    "email": "sulayramos@gmail.com",
+    "github": "https://github.com/sulayramos",
+    "linkedin": "https://www.linkedin.com/in/sulay-ramos/"
+  },
+  "positioning": [
+    "Analytische full-stack developer met een procesmatige en projectmatige basis.",
+    "Gebruikt AI dagelijks om workflows, analyses en digitale oplossingen slimmer te maken.",
+    "Sterk in het vertalen van complexe vraagstukken naar werkende dashboards, platformen, automation en secure omgevingen."
+  ],
+  "proofPoints": [
+    "Processen, datakwaliteit en AI-readiness uitgewerkt binnen een NSOC/telecom context.",
+    "Dummy-data prototypes gebruikt om AI/automation ideeen veilig toetsbaar te maken.",
+    "Low-code automation met n8n onderzocht voor workflows en projectmatige procesverbetering.",
+    "Secure OTAP-lab gebouwd met VPN, monitoring, reverse proxy, TLS, DNS en containers.",
+    "Full-stack platformen gebouwd met React, TypeScript, APIs en PostgreSQL."
+  ],
+  "roles": [
+    {
+      "title": "Operational Excellence Manager (NSOC)",
+      "company": "Delta Fiber Nederland",
+      "period": "2024 - 2026",
+      "highlights": [
+        "Operational Excellence initiatieven binnen het Network & Service Operations Center.",
+        "Procesanalyse en procesmodellering voor workflow-inzicht en optimalisatiekansen.",
+        "AI-use cases voor operations, waaronder incidentanalyse.",
+        "Actief betrokken bij AI-kernteam, prioritering en implementatie van AI-initiatieven.",
+        "Conceptontwikkeling rond AI-readiness, datakwaliteit en schaalbare toepassing van AI."
+      ]
+    },
+    {
+      "title": "Full-stack development & portfolio-projecten",
+      "company": "Network31 opleiding, zelfbouw en praktijkcases",
+      "period": "2020 - heden",
+      "highlights": [
+        "React/TypeScript, APIs, PostgreSQL, dashboards en role-based applicaties.",
+        "AI-assisted development toegepast voor analyse, prototyping en automation."
+      ]
+    },
+    {
+      "title": "Service Delivery Manager",
+      "company": "Odido Ondernemen",
+      "period": "2020 - 2024",
+      "highlights": [
+        "Coordinatie en levering van fixed telecomdiensten voor zakelijke klanten.",
+        "Servicekwaliteit bewaakt en leverprocessen geoptimaliseerd.",
+        "Order-entry processen geanalyseerd en automatiseringsmogelijkheden geinventariseerd.",
+        "Samenwerking met IT-partijen rondom digitalisering van procesverbeteringen."
+      ]
+    },
+    {
+      "title": "Operationeel Coordinator",
+      "company": "Dienst Justitiele Inrichtingen",
+      "period": "2020 - 2022",
+      "highlights": [
+        "Dagelijkse coordinatie binnen een detentieomgeving.",
+        "Veiligheid, begeleiding en toezicht gecombineerd met administratieve procesverbetering."
+      ]
+    },
+    {
+      "title": "Ondernemer / Bedrijfsmanager",
+      "company": "Verkeersinstituut Evolutie",
+      "period": "2012 - 2017",
+      "highlights": [
+        "Eigenaar en verantwoordelijk voor bedrijfsvoering, commercie en procesinrichting.",
+        "Kwaliteitsborging en operationele processen opgezet binnen de rijschool."
+      ]
+    },
+    {
+      "title": "Software Engineer - Mobiele Applicaties",
+      "company": "Gsm for You",
+      "period": "2001 - 2005",
+      "highlights": [
+        "Technische softwareoplossingen ontwikkeld voor mobiele platforms.",
+        "Vroege praktische ervaring met analyse, tooling en technische implementatie."
+      ]
+    }
+  ],
+  "skills": {
+    "operations": [
+      "Operational Excellence",
+      "Procesanalyse",
+      "Procesmodellering",
+      "AI-readiness",
+      "Datastromen",
+      "Stakeholdermanagement",
+      "Telecom operations"
+    ],
+    "engineering": [
+      "Python",
+      "SQL",
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "REST APIs",
+      "JWT",
+      "OAuth"
+    ],
+    "infrastructure": [
+      "Networking fundamentals",
+      "WireGuard VPN",
+      "Firewall hardening",
+      "Podman",
+      "NGINX reverse proxy",
+      "TLS",
+      "Monitoring",
+      "DNS",
+      "CI/CD concepts"
+    ],
+    "automation": [
+      "n8n",
+      "Workflow automation",
+      "Scripting",
+      "Dashboards",
+      "Data analysis",
+      "Low-code automation",
+      "AI use-case discovery"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Secure OTAP Home Infrastructure",
+      "type": "Infrastructure case study",
+      "summary": "Secure OTAP-lab voor testen, monitoring en remote access, met VPN, reverse proxy, DNS/TLS, containers en observability.",
+      "stack": [
+        "Rocky Linux",
+        "Podman",
+        "NGINX",
+        "WireGuard",
+        "AdGuard Home",
+        "Prometheus",
+        "Grafana",
+        "NAS storage",
+        "Internal DNS",
+        "Wildcard TLS",
+        "Firewall hardening",
+        "SSH hardening"
+      ],
+      "impact": [
+        "Gesegmenteerde VPN-toegang voor remote development en testscenario's.",
+        "Secure ingress via reverse proxy en TLS termination.",
+        "Monitoring stack voor compute- en containerinzicht.",
+        "Firewall hardening, NAS security en SSH-restricties toegepast.",
+        "Platformlagen ontworpen rond beheerbaarheid, security boundaries en realistische OTAP-validatie."
+      ],
+      "publicDemo": "Architectuurprincipes zijn publiek bruikbaar; exacte IP's, hostnames en toegangsregels blijven prive."
+    },
+    {
+      "name": "AI-driven Operations Readiness",
+      "type": "Operations case study",
+      "summary": "Processen, datakwaliteit en automationkansen vertaald naar haalbare AI-readiness en dummy-data prototypes binnen een NSOC-context.",
+      "stack": [
+        "Operational Excellence",
+        "Procesanalyse",
+        "Procesmodellering",
+        "Datamanagement",
+        "AI-readiness",
+        "Data quality",
+        "Dummy-data prototyping",
+        "PoC/MVP/Pilot discovery",
+        "n8n exploration",
+        "Dashboards",
+        "Telecom operations"
+      ],
+      "impact": [
+        "Helderder onderscheid tussen AI-kansen, automationkansen en procesverbetering.",
+        "Betere prioritering op impact, datakwaliteit, haalbaarheid en operationele adoptie.",
+        "Veilige dummy-data prototypes gebruikt om oplossingsrichtingen tastbaar te maken zonder interne incident- of klantdata.",
+        "Praktische route van procesinzicht naar uitvoerbare verbeterinitiatieven."
+      ],
+      "publicDemo": "Case gebruikt abstracte visuals en dummy-data context; interne incidentdata, klantdetails en bedrijfsdocumentatie blijven prive."
+    },
+    {
+      "name": "OASE Innovatieplatform",
+      "type": "Full-stack case study",
+      "summary": "Role-based innovatieplatform voor idee-intake, beoordeling, teamopvolging en portfolio-inzicht.",
+      "stack": [
+        "React 18",
+        "TypeScript",
+        "Vite",
+        "React Router",
+        "Tailwind CSS",
+        "Lucide Icons",
+        "React Hook Form",
+        "Zod",
+        "AG Grid",
+        "Framer Motion",
+        "REST API",
+        "JWT Bearer Auth",
+        "Google OAuth",
+        "Azure-ready architecture"
+      ],
+      "impact": [
+        "Centrale intakeflow voor operationele en strategische innovatie-ideeen.",
+        "Role-based autorisatie voor employee, manager en admin workflows.",
+        "Dashboards, KPI's, activiteitstrends en locatie-inzichten voor stuurinformatie.",
+        "Frontend/API-scheiding met omgevingsgestuurde configuratie en enterprise deployability."
+      ],
+      "publicDemo": "Demo beschikbaar op aanvraag; oorspronkelijke technische demo bevatte een direct IP-adres en is niet publiek opgenomen."
+    },
+    {
+      "name": "CRM / Operations Platform",
+      "type": "Product case study",
+      "summary": "Multi-office operationsplatform voor risk governance, wallet/treasury, settlements en auditbare transacties.",
+      "stack": [
+        "Vanilla JavaScript",
+        "Node.js",
+        "Express",
+        "REST APIs",
+        "PostgreSQL",
+        "Immutable ledger",
+        "Double-entry accounting",
+        "Risk Engine",
+        "Wallet & Treasury",
+        "Multi-application architecture"
+      ],
+      "impact": [
+        "Centrale server-side bron van waarheid voor verkoop, risk en treasury.",
+        "Hub-based processing via Player Office, Front Office, Back Office en Main Office.",
+        "Realtime risk governance en payment-grade statusmodel.",
+        "Auditbare transacties door journal-first architectuur."
+      ],
+      "publicDemo": "Alleen geanonimiseerde screenshots en procesdetails worden publiek gemaakt."
+    }
+  ],
+  "education": [
+    "Network31 Opleiding, Full-Stack IT Developer track, 2020 - heden",
+    "Hogeschool Utrecht, EMCI Maritime Yacht Broker, 2007 - 2011",
+    "C.S.G. Maarten Luther, HAVO Economie en Maatschappij, 1997 - 2003"
+  ],
+  "languages": [
+    "Nederlands - moedertaal",
+    "Engels - vloeiend"
+  ]
+}
