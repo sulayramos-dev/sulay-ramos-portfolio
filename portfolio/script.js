@@ -25,7 +25,7 @@ const lightboxCaption = document.querySelector("#image-lightbox-caption");
 const cases = {
   otap: {
     title: "Secure OTAP Home Infrastructure",
-    kicker: "Infrastructure case study",
+    kicker: "Infrastructure praktijkcase",
     summary:
       "Secure OTAP-lab waarin netwerk, containers, ingress, DNS/TLS, monitoring en VPN-toegang als een beheerbaar platform zijn ingericht.",
     facts: [
@@ -39,7 +39,7 @@ const cases = {
     visuals: [
       [
         "Container platform management",
-        "Portainer dashboard als bewijs van beheerbare Podman/container-runtime met actieve containers, images, volumes en netwerken.",
+        "Portainer dashboard als visualisatie van beheerbare Podman/container-runtime met actieve containers, images, volumes en netwerken.",
         "cases/01-secure-otap-home-infrastructure/screenshots/Portainer-redacted.webp"
       ],
       [
@@ -77,7 +77,7 @@ const cases = {
   },
   aiops: {
     title: "AI-driven Operations Readiness",
-    kicker: "Operations case study",
+    kicker: "Operations praktijkcase",
     summary:
       "NSOC-processen, datakwaliteit en automationkansen vertaald naar haalbare AI-readiness en dummy-data prototypes.",
     facts: [
@@ -120,7 +120,7 @@ const cases = {
   },
   oase: {
     title: "OASE Innovatieplatform",
-    kicker: "Full-stack case study",
+    kicker: "Full-stack praktijkcase",
     summary:
       "Role-based innovatieplatform voor idee-intake, beoordeling, teamopvolging en portfolio-inzicht.",
     facts: [
@@ -152,7 +152,7 @@ const cases = {
       challenge: [
         "Verbeterideeen raakten verspreid over e-mail, spreadsheets en losse initiatieven.",
         "Daardoor ontbrak zicht op kwaliteit, eigenaarschap, status, impact en besluitvorming.",
-        "Teams en managers hadden één centrale werkwijze nodig voor intake, beoordeling en opvolging."
+        "Teams en managers hadden een centrale werkwijze nodig voor intake, beoordeling en opvolging."
       ],
       approach: [
         "React/TypeScript Single Page Application opgezet met role-based routes.",
@@ -173,7 +173,7 @@ const cases = {
   },
   crm: {
     title: "CRM / Operations Platform",
-    kicker: "Product case study",
+    kicker: "Product praktijkcase",
     summary:
       "Multi-office operationsplatform voor risk governance, wallet/treasury, settlements en auditbare transacties.",
     facts: [
@@ -209,13 +209,13 @@ const cases = {
     tabs: {
       challenge: [
         "Losse spreadsheets, lokale databases en handmatige afstemming maakten verkoop, risico en uitbetaling kwetsbaar.",
-        "Er was één bron van waarheid nodig voor verkoop, exposure, treasurypositie en operationele werkvoorraad.",
+        "Er was een bron van waarheid nodig voor verkoop, exposure, treasurypositie en operationele werkvoorraad.",
         "Walletmutaties, settlements en high-risk flows moesten auditbaar verwerkt worden."
       ],
       approach: [
         "Multi-application suite ontworpen voor Player, Front Office, Back Office en Main Office.",
         "Hub-based processingmodel uitgewerkt voor operationele risicolagen.",
-        "Risk Engine, wallet/treasury en immutable ledger gecombineerd in één server-side platform.",
+        "Risk Engine, wallet/treasury en immutable ledger gecombineerd in een server-side platform.",
         "Dashboards en role-specific workflows gebouwd voor operators en management."
       ],
       impact: [
