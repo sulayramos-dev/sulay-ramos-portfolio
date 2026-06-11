@@ -1008,6 +1008,41 @@ h3 {
   padding-left: 20px;
 }
 
+.timeline-case-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.timeline-case-links span {
+  color: var(--clay);
+  flex-basis: 100%;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.timeline-case-links button {
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--paper);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 850;
+  padding: 8px 12px;
+}
+
+.timeline-case-links button:hover,
+.timeline-case-links button:focus-visible {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  outline: none;
+}
+
 .value-section {
   background: var(--mint);
 }
