@@ -26,20 +26,10 @@
       "company": "Delta Fiber Nederland",
       "period": "2024 - 2026",
       "highlights": [
-        "Operational Excellence initiatieven binnen het Network & Service Operations Center.",
-        "Procesanalyse en procesmodellering voor workflow-inzicht en optimalisatiekansen.",
-        "AI-use cases voor operations, waaronder incidentanalyse.",
-        "Actief betrokken bij AI-kernteam, prioritering en implementatie van AI-initiatieven.",
-        "Conceptontwikkeling rond AI-readiness, datakwaliteit en schaalbare toepassing van AI."
-      ]
-    },
-    {
-      "title": "Full-stack development & portfolio-projecten",
-      "company": "Network31 full-stack track, zelfstandige buildprojecten en praktijkcases",
-      "period": "2020 - heden",
-      "highlights": [
-        "React/TypeScript, APIs, PostgreSQL, dashboards en role-based applicaties.",
-        "AI-assisted development toegepast voor analyse, prototyping en automation."
+        "AI-readiness en datamanagement binnen de eigen NSOC-afdeling geinventariseerd.",
+        "Use cases vertaald naar haalbaarheid, datakwaliteit, privacy en operationele impact.",
+        "Als aanjager en kernteamlid bijgedragen aan organisatiebrede commitment rond AI, automation en OASE.",
+        "Requirements opgehaald bij operatie en management en vertaald naar concrete proces-, data- en toolingkeuzes."
       ]
     },
     {
@@ -63,12 +53,13 @@
       ]
     },
     {
-      "title": "Ondernemer / Bedrijfsmanager",
-      "company": "Verkeersinstituut Evolutie",
-      "period": "2012 - 2017",
+      "title": "Operations, coordinatie, ondernemerschap en digitalisering",
+      "company": "DJI, W R Branding, Verkeersinstituut Evolutie en zelfstandige opdrachtcase",
+      "period": "2012 - 2022",
       "highlights": [
-        "Eigenaar en verantwoordelijk voor bedrijfsvoering, commercie en procesinrichting.",
-        "Kwaliteitsborging en operationele processen opgezet binnen de rijschool."
+        "Operationele aansturing, procesverbetering en kwaliteitsborging.",
+        "Ondernemerschap, commercie en structuur aanbrengen in dagelijkse uitvoering.",
+        "In de Caribbean lottery branche handmatige, fraudegevoelige administratie vertaald naar heldere workflows en digitale opvolging."
       ]
     },
     {
@@ -127,7 +118,7 @@
     {
       "name": "Secure OTAP Home Infrastructure",
       "type": "Infrastructure praktijkcase",
-      "summary": "Secure OTAP-lab voor testen, monitoring en remote access, met VPN, reverse proxy, DNS/TLS, containers en observability.",
+      "summary": "Eigen secure OTAP-lab om concept development, dummy-data prototypes en pipeline-achtige testomgevingen snel op te zetten, op te schalen en af te breken.",
       "stack": [
         "Rocky Linux",
         "Podman",
@@ -154,7 +145,7 @@
     {
       "name": "AI-driven Operations Readiness",
       "type": "Operations praktijkcase",
-      "summary": "Processen, datakwaliteit en automationkansen vertaald naar haalbare AI-readiness en dummy-data prototypes binnen een NSOC-context.",
+      "summary": "NSOC-processen, datakwaliteit en automationkansen geinventariseerd en vertaald naar haalbare AI-readiness, organisatiebrede aandacht en dummy-data prototypes.",
       "stack": [
         "Operational Excellence",
         "Procesanalyse",
@@ -179,7 +170,7 @@
     {
       "name": "OASE Innovatieplatform",
       "type": "Full-stack praktijkcase",
-      "summary": "Role-based innovatieplatform voor idee-intake, beoordeling, teamopvolging en portfolio-inzicht.",
+      "summary": "Organisatiebreed innovatieplatform om NSOC- en afdelingsinitiatieven te structureren, beoordelen en opvolgen via een role-based full-stack oplossing.",
       "stack": [
         "React 18",
         "TypeScript",
@@ -207,7 +198,7 @@
     {
       "name": "CRM / Operations Platform",
       "type": "Product praktijkcase",
-      "summary": "Multi-office operationsplatform voor risk governance, wallet/treasury, settlements en auditbare transacties.",
+      "summary": "Uit de hand gelopen opdracht in de Caribbean lottery branche: fraudegevoelige handmatige administratie gedigitaliseerd naar een transparante multi-tenant operations suite.",
       "stack": [
         "Vanilla JavaScript",
         "Node.js",
