@@ -35,7 +35,7 @@
     },
     {
       "title": "Full-stack development & portfolio-projecten",
-      "company": "Network31 opleiding, zelfbouw en praktijkcases",
+      "company": "Network31 full-stack track, zelfstandige buildprojecten en praktijkcases",
       "period": "2020 - heden",
       "highlights": [
         "React/TypeScript, APIs, PostgreSQL, dashboards en role-based applicaties.",
@@ -126,7 +126,7 @@
   "projects": [
     {
       "name": "Secure OTAP Home Infrastructure",
-      "type": "Infrastructure case study",
+      "type": "Infrastructure praktijkcase",
       "summary": "Secure OTAP-lab voor testen, monitoring en remote access, met VPN, reverse proxy, DNS/TLS, containers en observability.",
       "stack": [
         "Rocky Linux",
@@ -153,7 +153,7 @@
     },
     {
       "name": "AI-driven Operations Readiness",
-      "type": "Operations case study",
+      "type": "Operations praktijkcase",
       "summary": "Processen, datakwaliteit en automationkansen vertaald naar haalbare AI-readiness en dummy-data prototypes binnen een NSOC-context.",
       "stack": [
         "Operational Excellence",
@@ -178,7 +178,7 @@
     },
     {
       "name": "OASE Innovatieplatform",
-      "type": "Full-stack case study",
+      "type": "Full-stack praktijkcase",
       "summary": "Role-based innovatieplatform voor idee-intake, beoordeling, teamopvolging en portfolio-inzicht.",
       "stack": [
         "React 18",
@@ -206,7 +206,7 @@
     },
     {
       "name": "CRM / Operations Platform",
-      "type": "Product case study",
+      "type": "Product praktijkcase",
       "summary": "Multi-office operationsplatform voor risk governance, wallet/treasury, settlements en auditbare transacties.",
       "stack": [
         "Vanilla JavaScript",
