@@ -28,6 +28,7 @@ body {
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -1057,11 +1058,12 @@ h3 {
 
 @media (max-width: 900px) {
   .nav-links {
-    display: none;
+    gap: 16px;
+    font-size: 0.88rem;
   }
 
   .hero {
-    min-height: 88vh;
+    min-height: 92svh;
   }
 
   .hero img {
@@ -1069,7 +1071,9 @@ h3 {
   }
 
   .hero-shade {
-    background: rgba(15, 23, 42, 0.58);
+    background:
+      linear-gradient(90deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.56) 56%, rgba(15, 23, 42, 0.26) 100%),
+      rgba(15, 23, 42, 0.2);
   }
 
   .hero-content {
@@ -1117,7 +1121,7 @@ h3 {
   }
 
   .case-visual {
-    min-height: 420px;
+    min-height: auto;
   }
 
   .visual-stage {
@@ -1125,14 +1129,172 @@ h3 {
   }
 }
 
-@media (max-width: 560px) {
-  .brand span:last-child {
-    display: none;
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .brand-mark {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-links {
+    display: flex;
+    font-size: 0.82rem;
+    gap: 8px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero img {
+    object-position: 68% 20%;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(15, 23, 42, 0.46) 0%, rgba(15, 23, 42, 0.72) 40%, rgba(15, 23, 42, 0.9) 100%),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.86) 0%, rgba(15, 23, 42, 0.52) 100%);
   }
 
   .hero-content {
-    padding-left: 18px;
-    padding-right: 18px;
+    max-width: none;
+    padding: 132px 18px 92px;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 18vw, 5.2rem);
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 34rem;
+  }
+
+  .section {
+    padding: 56px 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .signal-band {
+    padding: 18px;
+  }
+
+  .signal-grid article {
+    padding: 16px 0;
+  }
+
+  .metric {
+    font-size: 1.45rem;
+  }
+
+  .case-grid,
+  .capability-map {
+    grid-template-columns: 1fr;
+  }
+
+  .case-card {
+    min-height: auto;
+  }
+
+  .case-preview img,
+  .case-preview-placeholder {
+    aspect-ratio: 16 / 8.5;
+  }
+
+  .case-title,
+  .case-summary,
+  .case-proof,
+  .case-meta,
+  .case-number,
+  .case-cta {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .case-proof {
+    margin-top: 8px;
+  }
+
+  .capability-card {
+    padding: 20px;
+  }
+
+  .timeline-item {
+    gap: 10px;
+    padding: 24px 0;
+  }
+
+  .timeline-item time {
+    font-size: 0.9rem;
+  }
+
+  .case-modal-panel {
+    border-radius: 0;
+    inset: 0;
+    max-height: none;
+    max-width: none;
+    transform: none;
+    width: 100vw;
+  }
+
+  .case-modal-header {
+    padding: 18px;
+  }
+
+  .case-modal-header h2 {
+    font-size: clamp(1.8rem, 11vw, 2.7rem);
+  }
+
+  .case-modal-body {
+    display: block;
+  }
+
+  .case-detail {
+    padding: 20px 18px 34px;
+  }
+
+  .case-visual {
+    padding: 18px;
+  }
+
+  .visual-stage {
+    min-height: 220px;
+    padding: 18px;
+  }
+
+  .visual-copy {
+    padding: 12px 14px;
+  }
+
+  .case-tab-panel {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .image-lightbox-panel {
+    border-radius: 0;
+    inset: 0;
+    max-height: none;
+    padding: 16px;
+    transform: none;
+    width: 100vw;
   }
 
   .hero-actions,
@@ -1142,6 +1304,16 @@ h3 {
 
   .button {
     width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    font-size: 0.92rem;
+  }
+
+  .nav-links a {
+    padding: 2px 0;
   }
 
   .case-grid,
