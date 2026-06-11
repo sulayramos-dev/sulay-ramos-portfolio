@@ -3,6 +3,9 @@ const capabilityItems = document.querySelectorAll(".skill-filter-item");
 const copyEmail = document.querySelector("#copy-email");
 const email = "sulayramos@gmail.com";
 const caseButtons = document.querySelectorAll("[data-case]");
+const caseGrid = document.querySelector("#case-grid");
+const caseCarouselButtons = document.querySelectorAll("[data-case-carousel]");
+const caseCarouselIndicator = document.querySelector(".mobile-carousel-hint span:last-child");
 const caseModal = document.querySelector("#case-modal");
 const modalPanel = document.querySelector(".case-modal-panel");
 const modalTitle = document.querySelector("#case-modal-title");
@@ -241,6 +244,43 @@ let activeVisual = 0;
 let activeTab = "challenge";
 let lastCaseButton = null;
 
+function getCaseCarouselIndex() {
+  if (!caseGrid) return 0;
+
+  const cards = [...caseGrid.querySelectorAll(".case-card")];
+  if (!cards.length) return 0;
+
+  const gridLeft = caseGrid.getBoundingClientRect().left;
+  const closest = cards.reduce(
+    (current, card, index) => {
+      const distance = Math.abs(card.getBoundingClientRect().left - gridLeft);
+      return distance < current.distance ? { distance, index } : current;
+    },
+    { distance: Number.POSITIVE_INFINITY, index: 0 }
+  );
+
+  return closest.index;
+}
+
+function updateCaseCarouselIndicator() {
+  if (!caseCarouselIndicator || !caseGrid) return;
+
+  const total = caseGrid.querySelectorAll(".case-card").length;
+  const current = getCaseCarouselIndex() + 1;
+  caseCarouselIndicator.textContent = `${current} / ${total}`;
+}
+
+function moveCaseCarousel(direction) {
+  if (!caseGrid) return;
+
+  const firstCard = caseGrid.querySelector(".case-card");
+  if (!firstCard) return;
+
+  const gap = Number.parseFloat(getComputedStyle(caseGrid).columnGap || "0");
+  const step = firstCard.getBoundingClientRect().width + gap;
+  caseGrid.scrollBy({ left: direction * step, behavior: "smooth" });
+}
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const selected = button.dataset.filter;
@@ -350,6 +390,19 @@ function closeLightbox() {
 caseButtons.forEach((button) => {
   button.addEventListener("click", () => openCase(button.dataset.case, button));
 });
+
+caseCarouselButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    moveCaseCarousel(button.dataset.caseCarousel === "next" ? 1 : -1);
+  });
+});
+
+caseGrid?.addEventListener("scroll", () => {
+  window.requestAnimationFrame(updateCaseCarouselIndicator);
+});
+
+window.addEventListener("resize", updateCaseCarouselIndicator);
+updateCaseCarouselIndicator();
 
 document.querySelectorAll("[data-close-modal]").forEach((button) => {
   button.addEventListener("click", closeCase);
