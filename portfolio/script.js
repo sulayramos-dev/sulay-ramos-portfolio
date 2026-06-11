@@ -27,7 +27,7 @@ const cases = {
     title: "Secure OTAP Home Infrastructure",
     kicker: "Infrastructure praktijkcase",
     summary:
-      "Secure OTAP-lab waarin netwerk, containers, ingress, DNS/TLS, monitoring en VPN-toegang als een beheerbaar platform zijn ingericht.",
+      "Eigen secure OTAP-lab om concept development, dummy-data prototypes en pipeline-achtige testomgevingen sneller te kunnen opzetten, opschalen en afbreken.",
     facts: [
       ["Focus", "Secure OTAP platform"],
       ["Platform", "Firewall, compute, storage, ingress, monitoring"],
@@ -55,19 +55,20 @@ const cases = {
     ],
     tabs: {
       challenge: [
-        "Een realistische labomgeving nodig om automation- en infrastructuurconcepten veilig te testen.",
-        "Remote access moest werken zonder publieke beheerinterfaces of onnodige WAN-exposure.",
-        "Monitoring, DNS, TLS en container-netwerken moesten als een platform beheerd kunnen worden."
+        "Enterprise-achtige conceptontwikkeling loopt vaak traag wanneer elke test afhankelijk is van meerdere afdelingen, domeineigenaren of gedeelde omgevingen.",
+        "Er was een eigen, veilige labomgeving nodig om automation, dummy-data oplossingen en infrastructuurconcepten snel te kunnen toetsen.",
+        "Remote access, monitoring, DNS, TLS en container-netwerken moesten beheersbaar zijn zonder publieke beheerinterfaces of onnodige WAN-exposure."
       ],
       approach: [
         "Firewall, compute, storage, containers, reverse proxy en monitoring als platformlagen ontworpen.",
         "Rootless Podman en gescheiden netwerken gebruikt voor proxy, OTAP, monitoring, DNS en management.",
-        "WireGuard, SSH-hardening en LAN/VPN-only access toegepast voor gecontroleerde toegang."
+        "WireGuard, SSH-hardening en LAN/VPN-only access toegepast voor gecontroleerde toegang.",
+        "Platform zo opgezet dat tijdelijke testomgevingen sneller gebouwd, opgeschaald en weer afgebroken kunnen worden."
       ],
       impact: [
-        "Toont praktisch begrip van netwerkarchitectuur, security boundaries en platformbeheer.",
-        "Maakt automation, CI/CD- en infra-concepten veilig testbaar buiten productieomgevingen.",
-        "Sterke case voor opdrachten waar betrouwbaarheid, beheerbaarheid en segmentatie belangrijk zijn."
+        "Maakt automation, CI/CD-achtige flows en infra-concepten veilig testbaar buiten productieomgevingen.",
+        "Verkort de route van idee naar werkend prototype doordat minder afhankelijkheid ontstaat van formele enterprise-omgevingen.",
+        "Laat zien dat ik niet alleen requirements analyseer, maar ook technische randvoorwaarden kan organiseren om sneller te leveren."
       ],
       next: [
         "Verder uitbouwen met veilige architectuurvisuals, backupstrategie en CI/CD-flow.",
@@ -79,7 +80,7 @@ const cases = {
     title: "AI-driven Operations Readiness",
     kicker: "Operations praktijkcase",
     summary:
-      "NSOC-processen, datakwaliteit en automationkansen vertaald naar haalbare AI-readiness en dummy-data prototypes.",
+      "NSOC-processen, datakwaliteit en automationkansen geinventariseerd en vertaald naar haalbare AI-readiness, organisatiebrede aandacht en dummy-data prototypes.",
     facts: [
       ["Focus", "NSOC data management & AI-readiness"],
       ["Werkveld", "Telecom operations"],
@@ -97,20 +98,21 @@ const cases = {
     ],
     tabs: {
       challenge: [
-        "AI en automation zijn pas waardevol wanneer proces, data en eigenaarschap duidelijk zijn.",
+        "Binnen de NSOC-afdeling was veel potentieel voor AI en automation, maar waarde ontstaat pas wanneer proces, data en eigenaarschap duidelijk zijn.",
         "Operationele kennis zat verspreid over teams, dashboards, tickets en overdrachten.",
-        "Use cases moesten worden getoetst op datakwaliteit, privacy, impact en beheerbaarheid."
+        "Management en operatie hadden een concreet verhaal nodig: welke use cases zijn haalbaar, welke data ontbreekt en waar moet commitment ontstaan?"
       ],
       approach: [
         "Processen, overdrachten, beslismomenten en datastromen zichtbaar gemaakt.",
         "Datavraagstukken uitgewerkt rond definities, bronkwaliteit, eigenaarschap en privacy.",
         "Met dummy data prototypes gebouwd om ideeen veilig te toetsen zonder interne klant- of incidentdata.",
-        "Per use case bepaald of AI, dashboarding, workflow automation of processtandaardisatie de beste stap was."
+        "Per use case bepaald of AI, dashboarding, workflow automation of processtandaardisatie de beste stap was.",
+        "Als aanjager de brug gelegd tussen operatie, management en bredere organisatiebrede AI/OASE-initiatieven."
       ],
       impact: [
         "Duidelijker onderscheid tussen AI-kansen, datamanagementwerk en procesautomation.",
         "Betere prioritering op waarde, haalbaarheid, privacy en operationele adoptie.",
-        "Een praktisch verhaal over AI-readiness zonder productie-AI te claimen."
+        "AI-readiness werd niet als losse hype gepositioneerd, maar als praktisch verbeterprogramma voor operatie, data en tooling."
       ],
       next: [
         "Later uitbreiden met een interactieve readiness checklist en extra dummy-data dashboards.",
@@ -122,7 +124,7 @@ const cases = {
     title: "OASE Innovatieplatform",
     kicker: "Full-stack praktijkcase",
     summary:
-      "Role-based innovatieplatform voor idee-intake, beoordeling, teamopvolging en portfolio-inzicht.",
+      "Organisatiebreed innovatieplatform om NSOC- en afdelingsinitiatieven te structureren, beoordelen en opvolgen via een role-based full-stack oplossing.",
     facts: [
       ["Focus", "Idee-intake, beoordeling en opvolging"],
       ["Frontend", "React 18, TypeScript, Vite"],
@@ -150,20 +152,21 @@ const cases = {
     ],
     tabs: {
       challenge: [
+        "Na de AI-readiness inventarisatie ontstond de behoefte om innovatie en automation niet alleen binnen NSOC, maar breder binnen Delta Fiber te structureren.",
         "Verbeterideeen raakten verspreid over e-mail, spreadsheets en losse initiatieven.",
-        "Daardoor ontbrak zicht op kwaliteit, eigenaarschap, status, impact en besluitvorming.",
-        "Teams en managers hadden een centrale werkwijze nodig voor intake, beoordeling en opvolging."
+        "Management en teams hadden een centrale werkwijze nodig voor intake, beoordeling, eigenaarschap, status en besluitvorming."
       ],
       approach: [
         "React/TypeScript Single Page Application opgezet met role-based routes.",
         "Intakeflows ontworpen met validatie, contextvelden en duidelijke gebruikersrollen.",
         "Dashboards, analytics, tabellen en visualisaties toegevoegd voor stuurinformatie.",
+        "Requirements opgehaald vanuit operatie en management en vertaald naar schermen, rollen, datavelden en opvolglogica.",
         "Frontend/API-scheiding toegepast met auth-flows en omgevingsgestuurde configuratie."
       ],
       impact: [
         "Vervangt losse innovatie-opvolging door een centraal en traceerbaar proces.",
         "Geeft managers zicht op ideeen, teams, voortgang, trends en portfolio-informatie.",
-        "Laat full-stack productdenken zien: UX, data, API-integratie en schaalbare frontend."
+        "Laat zien hoe ik projectmatig, analytisch en full-stack werk: van vraagstuk en stakeholdercommunicatie naar werkende oplossing."
       ],
       next: [
         "Verder verrijken met extra geanonimiseerde productschermen en API/datamodel-visuals.",
@@ -175,7 +178,7 @@ const cases = {
     title: "CRM / Operations Platform",
     kicker: "Product praktijkcase",
     summary:
-      "Multi-office operationsplatform voor risk governance, wallet/treasury, settlements en auditbare transacties.",
+      "Uit de hand gelopen opdracht in de Caribbean lottery branche: fraudegevoelige handmatige administratie gedigitaliseerd naar een transparante multi-tenant operations suite.",
     facts: [
       ["Focus", "Operations, Risk & Treasury"],
       ["Rollen", "Player, Front Office, Back Office, Main Office"],
@@ -208,20 +211,22 @@ const cases = {
     ],
     tabs: {
       challenge: [
+        "Binnen de Caribbean lottery branche waren administratie, controles en afstemming sterk handmatig en daardoor fout- en fraudegevoelig.",
         "Losse spreadsheets, lokale databases en handmatige afstemming maakten verkoop, risico en uitbetaling kwetsbaar.",
-        "Er was een bron van waarheid nodig voor verkoop, exposure, treasurypositie en operationele werkvoorraad.",
-        "Walletmutaties, settlements en high-risk flows moesten auditbaar verwerkt worden."
+        "Er was een transparante bron van waarheid nodig voor verkoop, exposure, treasurypositie, audittrail en operationele werkvoorraad."
       ],
       approach: [
         "Multi-application suite ontworpen voor Player, Front Office, Back Office en Main Office.",
         "Hub-based processingmodel uitgewerkt voor operationele risicolagen.",
         "Risk Engine, wallet/treasury en immutable ledger gecombineerd in een server-side platform.",
-        "Dashboards en role-specific workflows gebouwd voor operators en management."
+        "Met stakeholders requirements scherp gemaakt en vertaald naar role-specific workflows voor operators en management.",
+        "Dashboards en controles gebouwd voor transparantie, opvolging en managementinformatie."
       ],
       impact: [
+        "Handmatige administratie vervangen door een volwassen multi-tenant operations en CRM-suite.",
         "Centrale bron van waarheid voor verkoop, risk, treasury en operationele verwerking.",
         "Meer grip op risk governance, settlementstatus en walletposities over meerdere rollen.",
-        "Sterke demonstratie van productontwikkeling, operations en full-stack engineering."
+        "Sterke demonstratie van projectmatig werken, operations-denken en full-stack engineering in een complex domein."
       ],
       next: [
         "Verder verrijken met veilige visuals voor Risk Engine, Data Management Center en settlementflows.",
