@@ -103,7 +103,16 @@
             <h2>Vier praktijkcases. Een rode draad: analyse wordt uitvoering.</h2>
           </div>
 
-          <div class="case-grid" aria-label="Interactieve praktijkcases">
+          <div class="mobile-carousel-hint" aria-hidden="true">
+            <span>Swipe door praktijkcases</span>
+            <span>1 / 4</span>
+          </div>
+
+          <div class="case-carousel-shell">
+            <button class="case-carousel-control prev" type="button" data-case-carousel="prev" aria-label="Vorige praktijkcase">
+              &lt;
+            </button>
+            <div class="case-grid" id="case-grid" aria-label="Interactieve praktijkcases">
             <button class="case-card" type="button" data-case="otap" aria-haspopup="dialog">
               <span class="case-preview">
                 <img
@@ -182,6 +191,10 @@
               </span>
               <span class="case-proof">Domeinen: operations, financiele flows en audittrail.</span>
               <span class="case-cta">Bekijk praktijkcase</span>
+            </button>
+            </div>
+            <button class="case-carousel-control next" type="button" data-case-carousel="next" aria-label="Volgende praktijkcase">
+              &gt;
             </button>
           </div>
         </div>
