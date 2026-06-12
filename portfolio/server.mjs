@@ -9,10 +9,14 @@ const port = Number.parseInt(process.env.PORT || "4173", 10);
 const types = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",
+  ".ico": "image/x-icon",
   ".js": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
   ".jpg": "image/jpeg",
+  ".pdf": "application/pdf",
+  ".png": "image/png",
   ".svg": "image/svg+xml; charset=utf-8",
+  ".webmanifest": "application/manifest+json; charset=utf-8",
   ".webp": "image/webp",
   ".md": "text/markdown; charset=utf-8"
 };

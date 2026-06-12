@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Sulay Ramos portfolio case icon">
+  <rect width="256" height="256" rx="64" fill="#0f172a"/>
+  <path d="M104 82V70a24 24 0 0 1 24-24h0a24 24 0 0 1 24 24v12" fill="none" stroke="#fff8ec" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M54 90h148a22 22 0 0 1 22 22v78a22 22 0 0 1-22 22H54a22 22 0 0 1-22-22v-78a22 22 0 0 1 22-22Z" fill="none" stroke="#fff8ec" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 142h192" fill="none" stroke="#fff8ec" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 142v12a14 14 0 0 0 14 14h36a14 14 0 0 0 14-14v-12" fill="none" stroke="#fff8ec" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
