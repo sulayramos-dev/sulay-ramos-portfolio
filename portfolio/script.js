@@ -1,5 +1,8 @@
 const CV_DOWNLOAD_PATH = "/cv/Sulay-Ramos-CV.pdf";
 const cvDownloadLinks = document.querySelectorAll("[data-cv-download]");
+const siteHeader = document.querySelector(".site-header");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const primaryNav = document.querySelector("#primary-nav");
 const caseButtons = document.querySelectorAll("[data-case]");
 const caseGrid = document.querySelector("#case-grid");
 const caseCarouselButtons = document.querySelectorAll("[data-case-carousel]");
@@ -27,6 +30,48 @@ cvDownloadLinks.forEach((link) => {
   link.href = CV_DOWNLOAD_PATH;
   link.setAttribute("download", "Sulay-Ramos-CV.pdf");
 });
+
+function syncNavMenuAccessibility(isOpen = siteHeader?.classList.contains("nav-open")) {
+  if (!primaryNav) return;
+
+  const isCompact = window.innerWidth <= 1040;
+  const shouldHide = isCompact && !isOpen;
+  primaryNav.setAttribute("aria-hidden", String(shouldHide));
+  primaryNav.querySelectorAll("a").forEach((link) => {
+    if (shouldHide) {
+      link.setAttribute("tabindex", "-1");
+      return;
+    }
+
+    link.removeAttribute("tabindex");
+  });
+}
+
+function closeNavMenu() {
+  if (!siteHeader || !navToggle) return;
+
+  siteHeader.classList.remove("nav-open");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "Open navigatiemenu");
+  syncNavMenuAccessibility(false);
+}
+
+function toggleNavMenu() {
+  if (!siteHeader || !navToggle) return;
+
+  const isOpen = siteHeader.classList.toggle("nav-open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "Sluit navigatiemenu" : "Open navigatiemenu");
+  syncNavMenuAccessibility(isOpen);
+}
+
+navToggle?.addEventListener("click", toggleNavMenu);
+
+primaryNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeNavMenu);
+});
+
+syncNavMenuAccessibility();
 
 const caseFramework = {
   factLabels: ["Context", "Focus", "Resultaat"],
@@ -435,7 +480,16 @@ caseGrid?.addEventListener("scroll", () => {
   window.requestAnimationFrame(updateCaseCarouselIndicator);
 });
 
-window.addEventListener("resize", updateCaseCarouselIndicator);
+window.addEventListener("resize", () => {
+  updateCaseCarouselIndicator();
+
+  if (window.innerWidth > 1040) {
+    closeNavMenu();
+    return;
+  }
+
+  syncNavMenuAccessibility();
+});
 updateCaseCarouselIndicator();
 
 document.querySelectorAll("[data-close-modal]").forEach((button) => {
@@ -484,6 +538,10 @@ tabButtons.forEach((button) => {
 });
 
 document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeNavMenu();
+  }
+
   if (event.key === "Escape" && imageLightbox && !imageLightbox.hidden) {
     closeLightbox();
     return;

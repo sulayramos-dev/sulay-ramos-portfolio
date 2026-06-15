@@ -87,6 +87,21 @@
       <symbol id="icon-chevron-right" viewBox="0 0 24 24">
         <path d="m9 18 6-6-6-6" />
       </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16" />
+        <path d="M4 12h16" />
+        <path d="M4 18h16" />
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.68H9.35V8.98h3.41v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.33 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.55V8.98h3.56v11.47Z" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.02c-3.23.7-3.91-1.39-3.91-1.39-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.74 0-1.27.45-2.3 1.2-3.12-.12-.29-.52-1.48.11-3.08 0 0 .98-.31 3.19 1.19A11.04 11.04 0 0 1 12 6.2c.98 0 1.96.13 2.88.39 2.21-1.5 3.18-1.19 3.18-1.19.64 1.6.24 2.79.12 3.08.75.82 1.2 1.85 1.2 3.12 0 4.46-2.72 5.45-5.3 5.74.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.55A11.5 11.5 0 0 0 12 .7Z" />
+      </symbol>
     </svg>
 
     <header class="site-header" aria-label="Primaire navigatie">
@@ -94,16 +109,40 @@
         <span class="brand-mark">SR</span>
         <span>Sulay Ramos</span>
       </a>
-      <nav class="nav-links">
-        <a href="#cases">Praktijkcases</a>
-        <a href="#skills">Expertise</a>
-        <a href="#experience">Ervaring</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-download" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">
+      <div class="header-nav">
+        <a class="nav-download nav-download-quick" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">
           <svg class="icon" aria-hidden="true"><use href="#icon-file-down"></use></svg>
-          <span>Download CV</span>
+          <span class="nav-download-full">Download CV</span>
+          <span class="nav-download-short">CV</span>
         </a>
-      </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigatiemenu" data-nav-toggle>
+          <svg class="icon nav-toggle-open" aria-hidden="true"><use href="#icon-menu"></use></svg>
+          <svg class="icon nav-toggle-close" aria-hidden="true"><use href="#icon-x"></use></svg>
+          <span>Menu</span>
+        </button>
+        <nav class="nav-links" id="primary-nav">
+          <a href="#cases">
+            <svg class="icon nav-icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>
+            <span>Praktijkcases</span>
+          </a>
+          <a href="#skills">
+            <svg class="icon nav-icon" aria-hidden="true"><use href="#icon-layers"></use></svg>
+            <span>Expertise</span>
+          </a>
+          <a href="#experience">
+            <svg class="icon nav-icon" aria-hidden="true"><use href="#icon-list-checks"></use></svg>
+            <span>Ervaring</span>
+          </a>
+          <a href="#contact">
+            <svg class="icon nav-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            <span>Contact</span>
+          </a>
+          <a class="nav-download nav-download-main" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">
+            <svg class="icon" aria-hidden="true"><use href="#icon-file-down"></use></svg>
+            <span>Download CV</span>
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main id="top">
@@ -470,8 +509,14 @@
               <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
               <span>sulayramos@gmail.com</span>
             </a>
-            <a class="button secondary" href="https://www.linkedin.com/in/sulay-ramos/">LinkedIn</a>
-            <a class="button secondary" href="https://github.com/sulayramos">GitHub</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/sulay-ramos/">
+              <svg class="icon brand-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="button secondary" href="https://github.com/sulayramos">
+              <svg class="icon brand-icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
       </section>
