@@ -61,6 +61,12 @@ const cases = {
         "cases/01-secure-otap-home-infrastructure/screenshots/Schermafbeelding 2026-06-12 123818 grafana.png"
       ]
     ],
+    tabVisuals: {
+      challenge: 0,
+      approach: 1,
+      result: 2,
+      expertise: 0
+    },
     tabs: {
       challenge: [
         "Nieuwe ideeën, automatisering en infrastructuurconcepten waren afhankelijk van gedeelde omgevingen en externe randvoorwaarden.",
@@ -112,6 +118,12 @@ const cases = {
         "cases/02-ai-driven-operations-readiness/screenshots/PoC-vs-Prototyp-vs-MVP-vs-Pilot.webp"
       ]
     ],
+    tabVisuals: {
+      challenge: 0,
+      approach: 1,
+      result: 2,
+      expertise: 1
+    },
     tabs: {
       challenge: [
         "Binnen operations bestond veel interesse in AI en automatisering, maar niet iedere verbetering vraagt om een AI-oplossing.",
@@ -168,6 +180,12 @@ const cases = {
         "cases/03-oase-innovatieplatform/screenshots/02-oase-information-architecture.webp"
       ]
     ],
+    tabVisuals: {
+      challenge: 0,
+      approach: 1,
+      result: 2,
+      expertise: 3
+    },
     tabs: {
       challenge: [
         "Innovatie- en verbeterinitiatieven ontstonden op meerdere plekken binnen de organisatie zonder centrale opvolging.",
@@ -224,6 +242,12 @@ const cases = {
         "cases/04-crm-systeem/screenshots/Schermafbeelding 2026-06-12 102329.png"
       ]
     ],
+    tabVisuals: {
+      challenge: 1,
+      approach: 2,
+      result: 0,
+      expertise: 3
+    },
     tabs: {
       challenge: [
         "Verkoop, afstemming en uitbetaling waren afhankelijk van losse bestanden, lokale administraties en handmatige controles.",
@@ -346,10 +370,24 @@ function renderTab() {
   tabPanel.innerHTML = `<ul>${tabItems.map((item) => `<li>${item}</li>`).join("")}</ul>`;
 }
 
+function getMappedVisualIndex(tabKey) {
+  const visualIndex = activeCase.tabVisuals?.[tabKey];
+  return Number.isInteger(visualIndex) && Boolean(activeCase.visuals[visualIndex]) ? visualIndex : null;
+}
+
+function syncVisualToTab(tabKey) {
+  const visualIndex = getMappedVisualIndex(tabKey);
+
+  if (visualIndex === null || visualIndex === activeVisual) return;
+
+  activeVisual = visualIndex;
+  renderVisual();
+}
+
 function openCase(caseKey, trigger) {
   activeCase = cases[caseKey];
-  activeVisual = 0;
   activeTab = "challenge";
+  activeVisual = getMappedVisualIndex(activeTab) ?? 0;
   lastCaseButton = trigger;
   renderCase();
   caseModal.hidden = false;
@@ -440,6 +478,7 @@ dotsContainer?.addEventListener("click", (event) => {
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
     activeTab = button.dataset.tab;
+    syncVisualToTab(activeTab);
     renderTab();
   });
 });

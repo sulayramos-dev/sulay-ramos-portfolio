@@ -1134,6 +1134,39 @@ h3 {
   padding-left: 20px;
 }
 
+.experience-cv-note {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 130px minmax(0, 1fr);
+  padding-top: 14px;
+}
+
+.experience-cv-note::before {
+  content: "";
+}
+
+.experience-cv-note p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 750;
+  margin: 0;
+}
+
+.experience-cv-note a {
+  color: var(--teal-dark);
+  font-weight: 900;
+  text-decoration-color: rgba(19, 78, 74, 0.34);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.experience-cv-note a:hover,
+.experience-cv-note a:focus-visible {
+  color: var(--ink);
+  outline: none;
+  text-decoration-color: var(--clay);
+}
+
 .cv-download-section {
   background: #fffaf0;
   padding-top: 20px;
@@ -1266,8 +1299,13 @@ h3 {
   .value-grid,
   .contact-panel,
   .cv-download-panel,
+  .experience-cv-note,
   .timeline-item {
     grid-template-columns: 1fr;
+  }
+
+  .experience-cv-note::before {
+    display: none;
   }
 
   .case-grid {
