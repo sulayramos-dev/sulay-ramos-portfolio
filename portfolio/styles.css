@@ -45,6 +45,29 @@ a {
   text-decoration: none;
 }
 
+.icon-sprite {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+
+.icon,
+.signal-icon,
+.capability-icon {
+  fill: none;
+  flex: 0 0 auto;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.icon {
+  height: 1.05em;
+  width: 1.05em;
+}
+
 .site-header {
   align-items: center;
   backdrop-filter: blur(16px);
@@ -103,11 +126,17 @@ a {
   border-radius: 999px;
   color: var(--teal-dark) !important;
   display: inline-flex;
+  gap: 7px;
   height: 40px;
   justify-content: center;
   line-height: 1;
   margin-left: clamp(4px, 1vw, 12px);
   padding: 0 14px;
+}
+
+.nav-download .icon {
+  height: 16px;
+  width: 16px;
 }
 
 .nav-download:hover,
@@ -230,6 +259,7 @@ h3 {
   border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
+  gap: 8px;
   font: inherit;
   font-weight: 850;
   justify-content: center;
@@ -285,6 +315,15 @@ h3 {
   border-left: 1px solid rgba(255, 255, 255, 0.16);
   min-height: 134px;
   padding: 18px 24px;
+}
+
+.signal-icon {
+  color: #ffe1a6;
+  display: block;
+  height: 24px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+  width: 24px;
 }
 
 .metric {
@@ -896,6 +935,11 @@ h3 {
   width: 42px;
 }
 
+.visual-arrow .icon {
+  height: 22px;
+  width: 22px;
+}
+
 .visual-arrow:hover,
 .visual-arrow:focus-visible {
   transform: translateY(-50%) scale(1.04);
@@ -1058,11 +1102,28 @@ h3 {
   transform: translateY(-2px);
 }
 
+.capability-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
 .capability-index {
   color: rgba(154, 79, 47, 0.56);
   font-size: 0.82rem;
   font-weight: 950;
-  margin-bottom: 22px;
+  margin-bottom: 0;
+}
+
+.capability-icon {
+  background: rgba(15, 118, 110, 0.08);
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  border-radius: 999px;
+  color: var(--teal-dark);
+  height: 34px;
+  padding: 7px;
+  width: 34px;
 }
 
 .capability-card h3 {
@@ -1514,6 +1575,11 @@ h3 {
     padding: 0;
     position: absolute;
     z-index: 3;
+  }
+
+  .case-carousel-control .icon {
+    height: 19px;
+    width: 19px;
   }
 
   .case-carousel-control.prev {

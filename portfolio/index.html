@@ -21,6 +21,74 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1" />
+        <path d="M4 7h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" />
+        <path d="M2 12h20" />
+        <path d="M9 12v1a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1" />
+      </symbol>
+      <symbol id="icon-file-down" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+        <path d="M14 2v6h6" />
+        <path d="M12 12v6" />
+        <path d="m9 15 3 3 3-3" />
+      </symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24">
+        <path d="m12 2 10 5-10 5L2 7Z" />
+        <path d="m2 17 10 5 10-5" />
+        <path d="m2 12 10 5 10-5" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+        <path d="m22 6-10 7L2 6" />
+      </symbol>
+      <symbol id="icon-list-checks" viewBox="0 0 24 24">
+        <path d="m3 7 2 2 4-4" />
+        <path d="m3 17 2 2 4-4" />
+        <path d="M13 6h8" />
+        <path d="M13 12h8" />
+        <path d="M13 18h8" />
+      </symbol>
+      <symbol id="icon-workflow" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="6" height="6" rx="1" />
+        <rect x="15" y="15" width="6" height="6" rx="1" />
+        <path d="M9 6h4a2 2 0 0 1 2 2v7" />
+        <path d="M15 12h-4a2 2 0 0 0-2 2v4" />
+      </symbol>
+      <symbol id="icon-brain-circuit" viewBox="0 0 24 24">
+        <path d="M12 5a3 3 0 0 0-5.8-1 3 3 0 0 0-2.2 5.1A3.5 3.5 0 0 0 7.5 15H12" />
+        <path d="M12 5a3 3 0 0 1 5.8-1 3 3 0 0 1 2.2 5.1A3.5 3.5 0 0 1 16.5 15H12" />
+        <path d="M12 5v14" />
+        <path d="M7 19h10" />
+        <path d="M17 19v-3" />
+        <path d="M7 19v-3" />
+        <path d="M15 9h3" />
+        <path d="M6 9h3" />
+      </symbol>
+      <symbol id="icon-route" viewBox="0 0 24 24">
+        <circle cx="6" cy="19" r="3" />
+        <circle cx="18" cy="5" r="3" />
+        <path d="M9 19h3a4 4 0 0 0 0-8H8a4 4 0 0 1 0-8h7" />
+      </symbol>
+      <symbol id="icon-shield-check" viewBox="0 0 24 24">
+        <path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3Z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="icon-database-zap" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="8" ry="3" />
+        <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+        <path d="M4 11v6c0 1.7 3.6 3 8 3" />
+        <path d="m17 14-3 5h4l-3 5" />
+      </symbol>
+      <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+        <path d="m15 18-6-6 6-6" />
+      </symbol>
+      <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6" />
+      </symbol>
+    </svg>
+
     <header class="site-header" aria-label="Primaire navigatie">
       <a class="brand" href="#top" aria-label="Sulay Ramos home">
         <span class="brand-mark">SR</span>
@@ -31,7 +99,10 @@
         <a href="#skills">Expertise</a>
         <a href="#experience">Ervaring</a>
         <a href="#contact">Contact</a>
-        <a class="nav-download" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">Download CV</a>
+        <a class="nav-download" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">
+          <svg class="icon" aria-hidden="true"><use href="#icon-file-down"></use></svg>
+          <span>Download CV</span>
+        </a>
       </nav>
     </header>
 
@@ -52,9 +123,18 @@
             bedacht worden, maar ook daadwerkelijk worden gebouwd, geïmplementeerd en gebruikt.
           </p>
           <div class="hero-actions" aria-label="Praktijkcases, ervaring en contact">
-            <a class="button primary" href="#cases">Bekijk praktijkcases</a>
-            <a class="button secondary" href="#skills">Bekijk expertise</a>
-            <a class="button secondary" href="#contact">Neem contact op</a>
+            <a class="button primary" href="#cases">
+              <svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>
+              <span>Bekijk praktijkcases</span>
+            </a>
+            <a class="button secondary" href="#skills">
+              <svg class="icon" aria-hidden="true"><use href="#icon-layers"></use></svg>
+              <span>Bekijk expertise</span>
+            </a>
+            <a class="button secondary" href="#contact">
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              <span>Neem contact op</span>
+            </a>
           </div>
         </div>
       </section>
@@ -62,18 +142,22 @@
       <section id="signal" class="signal-band">
         <div class="section-inner signal-grid">
           <article>
+            <svg class="signal-icon" aria-hidden="true"><use href="#icon-list-checks"></use></svg>
             <span class="metric">Procesverbetering</span>
             <p>Van versnipperde werkwijzen naar overzicht, structuur en eigenaarschap.</p>
           </article>
           <article>
+            <svg class="signal-icon" aria-hidden="true"><use href="#icon-workflow"></use></svg>
             <span class="metric">Automatisering</span>
             <p>Terugkerend werk vervangen door slimme workflows en ondersteunende tooling.</p>
           </article>
           <article>
+            <svg class="signal-icon" aria-hidden="true"><use href="#icon-brain-circuit"></use></svg>
             <span class="metric">AI &amp; Data</span>
             <p>AI inzetten waar data, processen en eigenaarschap daarvoor klaar zijn.</p>
           </article>
           <article>
+            <svg class="signal-icon" aria-hidden="true"><use href="#icon-route"></use></svg>
             <span class="metric">Van idee naar oplossing</span>
             <p>Analyse vertalen naar dashboards, platformen en werkende oplossingen.</p>
           </article>
@@ -114,7 +198,7 @@
 
           <div class="case-carousel-shell">
             <button class="case-carousel-control prev" type="button" data-case-carousel="prev" aria-label="Vorige praktijkcase">
-              &lt;
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-left"></use></svg>
             </button>
             <div class="case-grid" id="case-grid" aria-label="Interactieve praktijkcases">
               <button class="case-card" type="button" data-case="crm" aria-haspopup="dialog">
@@ -170,7 +254,7 @@
               </button>
             </div>
             <button class="case-carousel-control next" type="button" data-case-carousel="next" aria-label="Volgende praktijkcase">
-              &gt;
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"></use></svg>
             </button>
           </div>
         </div>
@@ -189,7 +273,10 @@
 
           <div class="capability-map" aria-live="polite">
             <article class="capability-card">
-              <span class="capability-index">01</span>
+              <div class="capability-head">
+                <span class="capability-index">01</span>
+                <svg class="capability-icon" aria-hidden="true"><use href="#icon-list-checks"></use></svg>
+              </div>
               <h3>Proces &amp; projectstructuur</h3>
               <p>
                 Vraagstukken vertalen naar duidelijke processen, prioriteiten en eigenaarschap.
@@ -202,7 +289,10 @@
             </article>
 
             <article class="capability-card">
-              <span class="capability-index">02</span>
+              <div class="capability-head">
+                <span class="capability-index">02</span>
+                <svg class="capability-icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg>
+              </div>
               <h3>Veilige infrastructuur</h3>
               <p>
                 Omgevingen inrichten voor veilig ontwikkelen, testen, monitoren en beheren.
@@ -215,7 +305,10 @@
             </article>
 
             <article class="capability-card">
-              <span class="capability-index">03</span>
+              <div class="capability-head">
+                <span class="capability-index">03</span>
+                <svg class="capability-icon" aria-hidden="true"><use href="#icon-workflow"></use></svg>
+              </div>
               <h3>Automatisering &amp; realisatie</h3>
               <p>
                 Ideeën vertalen naar werkende oplossingen, workflows en applicaties.
@@ -228,7 +321,10 @@
             </article>
 
             <article class="capability-card">
-              <span class="capability-index">04</span>
+              <div class="capability-head">
+                <span class="capability-index">04</span>
+                <svg class="capability-icon" aria-hidden="true"><use href="#icon-database-zap"></use></svg>
+              </div>
               <h3>AI &amp; data-readiness</h3>
               <p>
                 Bepalen waar data, AI en automatisering praktisch toepasbaar zijn.
@@ -328,8 +424,14 @@
             </p>
           </div>
           <div class="cv-download-actions">
-            <a class="button primary" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">Download CV (PDF)</a>
-            <a class="button secondary" href="#contact">Neem contact op</a>
+            <a class="button primary" data-cv-download="" download="Sulay-Ramos-CV.pdf" href="/cv/Sulay-Ramos-CV.pdf">
+              <svg class="icon" aria-hidden="true"><use href="#icon-file-down"></use></svg>
+              <span>Download CV (PDF)</span>
+            </a>
+            <a class="button secondary" href="#contact">
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              <span>Neem contact op</span>
+            </a>
           </div>
         </div>
       </section>
@@ -364,7 +466,10 @@
             <h2>Laten we kennismaken.</h2>
           </div>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:sulayramos@gmail.com">sulayramos@gmail.com</a>
+            <a class="button primary" href="mailto:sulayramos@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              <span>sulayramos@gmail.com</span>
+            </a>
             <a class="button secondary" href="https://www.linkedin.com/in/sulay-ramos/">LinkedIn</a>
             <a class="button secondary" href="https://github.com/sulayramos">GitHub</a>
           </div>
@@ -394,10 +499,14 @@
                 </div>
               </div>
               <div class="visual-controls">
-                <button class="icon-button visual-arrow visual-prev" type="button" id="case-prev" aria-label="Vorige visual">&lt;</button>
+                <button class="icon-button visual-arrow visual-prev" type="button" id="case-prev" aria-label="Vorige visual">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-chevron-left"></use></svg>
+                </button>
                 <div class="case-dots" id="case-dots" aria-label="Visual navigatie"></div>
                 <button class="icon-button visual-open" id="case-open-image" type="button" aria-label="Open visual groot"></button>
-                <button class="icon-button visual-arrow visual-next" type="button" id="case-next" aria-label="Volgende visual">&gt;</button>
+                <button class="icon-button visual-arrow visual-next" type="button" id="case-next" aria-label="Volgende visual">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"></use></svg>
+                </button>
               </div>
             </div>
           </aside>
