@@ -80,14 +80,14 @@ const caseFramework = {
 
 const cases = {
   otap: {
-    title: "Secure OTAP Home Infrastructure",
+    title: "Secure Enterprise OTAP Infrastructure",
     kicker: "Infrastructure praktijkcase",
     summary:
-      "Nieuwe ideeën en automatiseringsconcepten zijn pas waardevol wanneer ze veilig en gecontroleerd kunnen worden getest. Deze case laat zien hoe een eigen OTAP-omgeving de afstand tussen idee, experiment en uitvoering verkleint.",
+      "OTAP staat voor Ontwikkeling, Test, Acceptatie en Productie: een gecontroleerde manier om software en automatisering veilig te ontwikkelen, testen en uitrollen. Deze case laat zien hoe enterprise-infrastructuurprincipes zijn vertaald naar een on-premise en cloud-ready OTAP-omgeving.",
     facts: [
-      ["Context", "Eigen OTAP-labomgeving"],
-      ["Focus", "Veilig experimenteren en realiseren"],
-      ["Resultaat", "Kortere route van idee naar werkende oplossing"]
+      ["Context", "Enterprise OTAP-omgeving"],
+      ["Focus", "On-premise en cloud-ready infrastructuur"],
+      ["Resultaat", "Veiliger en sneller van concept naar prototype"]
     ],
     visuals: [
       [
@@ -114,25 +114,25 @@ const cases = {
     },
     tabs: {
       challenge: [
-        "Nieuwe ideeën, automatisering en infrastructuurconcepten waren afhankelijk van gedeelde omgevingen en externe randvoorwaarden.",
-        "Hierdoor kostte experimenteren, testen en valideren onnodig veel tijd.",
-        "Er was behoefte aan een veilige omgeving waarin concepten zelfstandig konden worden ontwikkeld, getest en beoordeeld."
+        "Zonder gecontroleerde OTAP-omgeving wordt experimenteren afhankelijk van gedeelde omgevingen, domeineigenaren en lange provisioningroutes.",
+        "Nieuwe oplossingen vragen om een veilige omgeving waarin ontwikkeling, testen, beheer en uitrol gecontroleerd kunnen plaatsvinden.",
+        "Er was behoefte aan een omgeving waarin concepten zelfstandig konden worden ontwikkeld, getest, beheerd en beoordeeld."
       ],
       approach: [
-        "Een eigen OTAP-omgeving ingericht voor ontwikkeling, testen, monitoring en gecontroleerde uitrol.",
-        "Platformlagen voor toegang, netwerk, monitoring en beheer samengebracht in één beheersbare omgeving.",
-        "Veiligheidsmaatregelen toegepast zodat experimenten en prototypes gecontroleerd konden worden uitgevoerd.",
-        "De omgeving ingericht om nieuwe concepten sneller op te zetten, te toetsen en weer af te bouwen."
+        "Een beheersbare infrastructuur ingericht voor ontwikkeling, testen, monitoring en gecontroleerde uitrol.",
+        "Platformlagen voor toegang, netwerk, containerbeheer, DNS, monitoring en beheer samengebracht in één beheersbare omgeving.",
+        "Principes toegepast die relevant zijn voor zowel on-premise als cloudomgevingen zoals Azure: segmentatie, veilige toegang, observability en herhaalbare deployment.",
+        "De omgeving ingericht om concepten sneller op te zetten, te toetsen en waar nodig weer af te bouwen."
       ],
       result: [
-        "Nieuwe ideeën en automatiseringsconcepten konden sneller worden gevalideerd buiten productieomgevingen.",
-        "Minder afhankelijkheid van gedeelde enterprise-omgevingen voor experimenten en prototyping.",
-        "De case laat zien hoe technische randvoorwaarden kunnen bijdragen aan snellere uitvoering en innovatie."
+        "De juiste technische randvoorwaarden maakten het mogelijk om concepten sneller, veiliger en betrouwbaarder te valideren.",
+        "Nieuwe ideeën en automatiseringsconcepten konden worden getoetst zonder productieomgevingen te belasten.",
+        "Gecontroleerde infrastructuur droeg direct bij aan snellere uitvoering en innovatie."
       ],
       expertise: [
-        "Veilige infrastructuur: een gecontroleerde omgeving creëren voor ontwikkeling, testen en beheer.",
-        "Automatisering & realisatie: randvoorwaarden organiseren waardoor ideeën sneller kunnen worden gevalideerd.",
-        "Proces & projectstructuur: technische en operationele afhankelijkheden terugbrengen tot een werkbare ontwikkelomgeving."
+        "Veilige infrastructuur, OTAP-denken, platformbeheer, monitoring en cloud-ready architectuur.",
+        "Cloud & on-premise denken: infrastructuurkeuzes maken die zowel self-hosted als Azure/cloud-ready toepasbaar zijn.",
+        "Automatisering & realisatie: technische randvoorwaarden organiseren waardoor ideeën sneller gevalideerd kunnen worden."
       ]
     }
   },
@@ -140,11 +140,11 @@ const cases = {
     title: "AI-driven Operations Readiness",
     kicker: "Operations praktijkcase",
     summary:
-      "AI levert pas waarde op wanneer processen, data en eigenaarschap op orde zijn. Deze case laat zien hoe operationele analyse is gebruikt om verbeterkansen te prioriteren en realistische vervolgstappen te bepalen.",
+      "Binnen het NSOC stond operationele informatie verspreid over systemen zoals TOPdesk, CRS en ServiceNow. Door deze data bij elkaar te brengen ontstonden dashboards en inzichten die eerder niet direct zichtbaar waren voor operatie en management.",
     facts: [
       ["Context", "Delta Fiber NSOC"],
-      ["Focus", "AI-readiness, datakwaliteit en procesverbetering"],
-      ["Resultaat", "Haalbare AI- en automationkansen met duidelijke prioriteiten"]
+      ["Focus", "Data-silo's, dashboards en AI-readiness"],
+      ["Resultaat", "Nieuwe NSOC-inzichten en duidelijke verbeterprioriteiten"]
     ],
     visuals: [
       [
@@ -171,25 +171,25 @@ const cases = {
     },
     tabs: {
       challenge: [
-        "Binnen operations bestond veel interesse in AI en automatisering, maar niet iedere verbetering vraagt om een AI-oplossing.",
-        "Proceskennis, data en eigenaarschap waren verspreid over teams, systemen en werkwijzen.",
-        "Er was behoefte aan een duidelijke aanpak om te bepalen welke verbeterinitiatieven haalbaar, waardevol en uitvoerbaar waren."
+        "Operationele data en procesinformatie stonden verspreid over meerdere systemen, waardoor patronen, knelpunten en verbeterkansen niet eenvoudig zichtbaar waren.",
+        "Binnen het NSOC was veel operationele kennis aanwezig, maar informatie uit TOPdesk, CRS en ServiceNow stond niet vanzelf in één operationeel beeld.",
+        "Er was behoefte aan een concreter beeld van de operatie voordat AI- of automatiseringsinitiatieven verantwoord konden worden geprioriteerd."
       ],
       approach: [
-        "Processen, overdrachten, beslismomenten en informatiestromen zijn in kaart gebracht.",
-        "Per verbeterinitiatief is beoordeeld of procesverbetering, dashboarding, automatisering of AI de meest logische vervolgstap was.",
-        "Verbeterideeën zijn veilig en gecontroleerd getoetst met prototypes en voorbeelddata.",
-        "Analyse, operatie en management zijn samengebracht om draagvlak en prioriteiten gezamenlijk vast te stellen."
+        "Dataflows uit TOPdesk, CRS en ServiceNow zijn geïnventariseerd en samengebracht in een dashboardomgeving voor operationele analyse en prioritering.",
+        "Processen, overdrachten, beslismomenten en informatiestromen zijn met elkaar in verband gebracht.",
+        "Per verbeterkans is beoordeeld of procesverbetering, dashboarding, workflowautomatisering of AI de meest logische vervolgstap was.",
+        "De inzichten zijn gebruikt om operatie en management te helpen prioriteren en de basis te leggen voor bredere innovatie- en automationinitiatieven."
       ],
       result: [
-        "Meer inzicht ontstaan in welke verbeterinitiatieven daadwerkelijk geschikt zijn voor AI of automatisering.",
-        "Prioriteiten scherper gemaakt op basis van waarde, haalbaarheid en operationele impact.",
-        "AI-readiness gepositioneerd als praktisch verbeterprogramma in plaats van een los technologie-initiatief."
+        "Het NSOC kreeg concreter inzicht in operationele patronen, datakwaliteit en verbeterkansen.",
+        "AI- en automatiseringsinitiatieven konden beter worden geprioriteerd op basis van data, operationele impact en uitvoerbaarheid.",
+        "De aanpak werd een belangrijke aanjager voor het organisatiebredere OASE Innovatieplatform."
       ],
       expertise: [
-        "AI & data-readiness: beoordelen waar AI daadwerkelijk waarde toevoegt en welke randvoorwaarden daarvoor nodig zijn.",
-        "Proces & projectstructuur: operationele kennis vertalen naar prioriteiten, eigenaarschap en uitvoerbare verbeterinitiatieven.",
-        "Stakeholderafstemming: operatie, management en organisatie verbinden rond haalbare vervolgstappen."
+        "Dataflow-inventarisatie, procesanalyse, dashboarding en het vertalen van operationele data naar haalbare AI- en automatiseringskansen.",
+        "AI & data-readiness: beoordelen waar data, automatisering of AI praktisch toepasbaar en waardevol is.",
+        "Stakeholderafstemming: operatie, management en technologie verbinden rond prioriteiten en vervolgstappen."
       ]
     }
   },
@@ -197,7 +197,7 @@ const cases = {
     title: "OASE Innovatieplatform",
     kicker: "Full-stack praktijkcase",
     summary:
-      "Wanneer verbeterideeën verspreid raken over teams, documenten en losse initiatieven ontstaat weinig zicht op eigenaarschap, voortgang en besluitvorming. Deze case laat zien hoe innovatie en automatisering zijn vertaald naar één centrale werkwijze voor intake, beoordeling en opvolging.",
+      "Na de AI-readiness inventarisatie ontstond de behoefte om innovatie- en automatiseringsinitiatieven organisatiebreed te structureren. OASE bracht ideeën, beoordeling, eigenaarschap en opvolging samen in één centrale werkwijze.",
     facts: [
       ["Context", "Delta Fiber – innovatie en automation"],
       ["Focus", "Idee-intake, beoordeling, eigenaarschap en opvolging"],
@@ -233,25 +233,25 @@ const cases = {
     },
     tabs: {
       challenge: [
-        "Innovatie- en verbeterinitiatieven ontstonden op meerdere plekken binnen de organisatie zonder centrale opvolging.",
-        "Ideeën, verbeteracties en automatiseringskansen raakten verspreid over e-mail, documenten en losse initiatieven.",
-        "Management en teams hadden behoefte aan een duidelijke werkwijze voor intake, eigenaarschap, statusbewaking en besluitvorming."
+        "Innovatie- en automatiseringsideeën ontstonden op verschillende plekken binnen de organisatie, vaak via losse documenten, e-mails en initiatieven zonder centrale opvolging.",
+        "De AI-readiness inventarisatie maakte duidelijk dat verbeterideeën, automatiseringskansen en innovatievragen breder speelden dan één afdeling.",
+        "Management en teams hadden behoefte aan een organisatiebrede werkwijze om ideeën te registreren, beoordelen, prioriteren en richting realisatie te brengen."
       ],
       approach: [
-        "Het innovatieproces is vertaald naar een centrale werkwijze voor intake, beoordeling en opvolging.",
-        "Rollen, verantwoordelijkheden en eigenaarschap zijn expliciet gemaakt binnen het platform.",
-        "Informatie, voortgang en besluitvorming zijn samengebracht in één overzichtelijke omgeving.",
+        "Het proces van idee tot realisatie is vertaald naar een platform voor intake, beoordeling, eigenaarschap, voortgang en besluitvorming.",
+        "Als kernteamlid is meegedacht over de vertaling van NSOC-inzichten naar een organisatiebreder programma voor innovatie en automation.",
+        "Rollen, verantwoordelijkheden, statusinformatie en besluitvorming zijn samengebracht in één overzichtelijke platformstructuur.",
         "De oplossing is opgebouwd vanuit procesanalyse, stakeholderinput en praktische gebruikersflows."
       ],
       result: [
-        "Innovatie-initiatieven zijn beter zichtbaar, opvolgbaar en beheersbaar gemaakt.",
-        "Teams en management beschikken over één centrale werkwijze voor beoordeling en voortgangsbewaking.",
-        "De case laat zien hoe structuur, eigenaarschap en digitalisering kunnen samenkomen in een werkende oplossing."
+        "Innovatie-initiatieven werden beter zichtbaar, opvolgbaar en beheersbaar.",
+        "Teams en management kregen één centrale werkwijze voor verbetering, automatisering, beoordeling en voortgangsbewaking.",
+        "De case laat zien hoe een afdelingsinitiatief kan doorgroeien naar een organisatiebrede oplossing."
       ],
       expertise: [
-        "Proces & projectstructuur: intake, beoordeling en opvolging vertalen naar een duidelijke en schaalbare werkwijze.",
-        "Automatisering & realisatie: een organisatievraagstuk omzetten naar een bruikbaar platform met duidelijke gebruikersflows.",
-        "Stakeholderafstemming: belangen en requirements van management en operatie vertalen naar één gezamenlijke werkwijze."
+        "Processtructuur, stakeholderafstemming, productontwikkeling en het vertalen van organisatiebehoeften naar een werkend platform.",
+        "Productontwikkeling: organisatiebehoeften omzetten naar gebruikersflows, platformlogica en bruikbare functionaliteit.",
+        "Stakeholderafstemming: requirements van management, operatie en teams samenbrengen in één gezamenlijke aanpak."
       ]
     }
   },
